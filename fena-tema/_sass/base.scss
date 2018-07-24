@@ -1,0 +1,243 @@
+$tamna: #131515;
+$crvena: lighten(#460a14, 30%);
+$plava: #387d7a;
+$zuta: #ffc857;
+$svetla: #fbf5f3;
+
+body {
+    background: $svetla; 
+    a {
+        color: $zuta;
+        color: $crvena;
+    }
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $plava;
+    font: Source Sans Pro;
+}
+
+
+nav {
+    background: lighten($tamna, 15%);
+    ul a {
+        color: $zuta;
+    }
+}
+
+.responsive {
+    max-width:100%;
+    width: 100%;
+    height: auto;
+}
+
+.pozadina-sidebar {
+    width: 100%;
+    left: 0;
+    right: 0;
+    
+}
+
+.fena-logo {
+    max-width:100%;
+    width: 100%;
+    height: auto;
+}
+
+.fena-logo-hero {
+    // filter: drop-shadow(0px 27px 7px lighten($tamna, 1%));
+    // filter: drop-shadow(0px 4px 1px lighten($tamna, 10%));
+    min-height: 10rem;
+    max-width:100%;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+    // padding: 3rem 1rem;
+    // min-height: 22rem;
+    height: 100%;
+    vertical-align: middle;
+    background: url("../assets/img/fena-bg.svg") repeat;
+    h3 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+}
+
+.hero-natpis {
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+            
+}
+
+.hero-logo {
+    -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 7s; /* Firefox < 16 */
+        -ms-animation: fadein 7s; /* Internet Explorer */
+         -o-animation: fadein 7s; /* Opera < 12.1 */
+            animation: fadein 7s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media screen and (max-width: 680px) {
+    // .hero {
+    //     flex-direction: column;
+    //     padding: 2rem 2rem;
+    // }
+}
+    
+    
+.mapa iframe {
+    width: 100%;
+    min-height: 25em;
+}
+
+.svg-box {
+}
+
+.f-linija {
+    height: 20rem;
+}
+
+// .1324mtco {
+//     align-items: center;
+//     vertical-align: middle;
+// }
+.lokacija, .o-nama {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 680px) {
+    .lokacija, .tahografi {
+        flex-direction: column;
+        .skica {
+            flex: 0 0 auto;
+        }
+    }
+    
+    .o-nama {
+        flex-direction: column-reverse;
+        .skica {
+            flex: 0 0 auto;
+        }
+    }
+    
+    .place {
+        margin: auto;
+        padding: auto;
+        
+    }
+}
+.skica {
+    margin: 1.618rem;
+    padding: 1.618rem;
+    // min-width: 5rem;
+    flex: 0 0 25em;
+}
+
+.place {
+    margin: 1.618rem;
+    padding: 1.618rem;
+}
+
+.gde-smo {
+    
+}
+
+.autoput {
+    background: url("../assets/img/autoput.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 25rem;
+}
+
+.page-footer {
+    background: lighten($tamna, 15%);
+    background: lighten($tamna, 5%) url("../assets/img/fena-bg.svg") repeat;
+    h1, h2, h3, h4, h5, h6 {
+        color: $zuta;
+    }
+    a {
+        color: $crvena;
+    }
+    
+    .footer-copyright {
+        background: rgba(18, 20, 20, .2);
+    }
+    
+}
+
+
+
+// .samocrtajuci-svg {
+//     // display: flex;
+//     // margin-top: 3em;
+//     // align-items: center;
+//     // justify-content: center;
+// 
+//     svg {
+//         position: relative;
+//         filter: drop-shadow(0 0 2px #404040);
+//         // top: 10vh;
+//         width: 5vh;
+//         // opacity: 0.2;
+//         // z-index: -80;
+//         path {
+//             stroke: #d41919;
+//             stroke-width: 1;
+//             stroke-dasharray: 700px;
+//             stroke-dashoffset: 700px;
+//             animation-name: draw;
+//             animation-duration: 5s;
+//             animation-fill-mode: forwards; // Stay on the last frame
+//             animation-iteration-count: 1; // Run only once
+//             animation-timing-function: ease-in;
+//         }
+//     }
+// }
+// @keyframes draw {
+//     to {
+//         stroke-dashoffset: 0;
+//     }
+// }
