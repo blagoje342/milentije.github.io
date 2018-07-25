@@ -32,13 +32,6 @@ nav {
     height: auto;
 }
 
-.pozadina-sidebar {
-    width: 100%;
-    left: 0;
-    right: 0;
-    
-}
-
 .fena-logo {
     max-width:100%;
     width: 100%;
@@ -64,7 +57,8 @@ nav {
     // min-height: 22rem;
     height: 100%;
     vertical-align: middle;
-    background: url("../assets/img/fena-bg.svg") repeat;
+    background: url("../assets/img/fena-bg.svg") repeat, url("../assets/img/trucks.svg") no-repeat, url("../assets/img/truck1.svg") right no-repeat;
+    background-size: auto, contain, contain;
     h3 {
         font-size: 4rem;
         font-weight: 600;
@@ -133,6 +127,8 @@ nav {
 .svg-box {
 }
 
+.trucks {
+}
 .f-linija {
     height: 20rem;
 }
@@ -182,6 +178,7 @@ nav {
 }
 
 .gde-smo {
+    max-width: 40em;
     
 }
 
@@ -241,3 +238,12 @@ nav {
 //         stroke-dashoffset: 0;
 //     }
 // }
+
+.logo-footer {
+    width: 20rem;
+    margin-top: 3rem;
+}
+
+.pin {
+    color: $crvena;
+}
